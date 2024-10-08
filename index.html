@@ -1,19 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Pages Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Professional Full Stack Web Developer CV" />
+  <title>Full-Stack Developer CV</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+  <!-- Custom CSS (Optional) -->
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
+      font-family: 'Arial', sans-serif;
+    }
+    .section-title {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    .project-list li {
+      margin-bottom: 1.5rem;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .skills-list span {
+      background-color: #e5e5e5;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
-<body>
-  <h1>Welcome to My GitHub Pages Site</h1>
-  <p>This is a simple static site hosted on GitHub Pages.</p>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white py-10">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold">John Doe</h1>
+      <p class="text-xl">Professional Full-Stack Web Developer</p>
+      <p>Email: john.doe@example.com | Phone: +1 234 567 890</p>
+      <p>Location: San Francisco, CA | LinkedIn: <a href="#" class="text-yellow-300">LinkedIn Profile</a></p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto mt-10 px-5 lg:px-0">
+    <!-- Skills Section -->
+    <section class="mb-10">
+      <h2 class="section-title text-blue-900">Skills</h2>
+      <div class="skills-list">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>TailwindCSS</span>
+        <span>Bootstrap</span>
+        <span>JavaScript</span>
+        <span>React.js</span>
+        <span>Vue.js</span>
+        <span>Laravel</span>
+        <span>MySQL</span>
+        <span>AWS</span>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="mb-10">
+      <h2 class="section-title text-blue-900">Experience</h2>
+      <div class="mb-5">
+        <h3 class="font-bold">Senior Full-Stack Developer at Tech Corp</h3>
+        <p class="text-sm text-gray-600">Jan 2020 - Present</p>
+        <p>Developed and maintained full-stack applications using Laravel, React.js, and MySQL. Managed AWS deployments for a global user base.</p>
+      </div>
+      <div>
+        <h3 class="font-bold">Web Developer at Web Solutions</h3>
+        <p class="text-sm text-gray-600">Aug 2017 - Dec 2019</p>
+        <p>Created responsive websites using HTML, CSS, TailwindCSS, and Vue.js. Worked on back-end development using Laravel and MySQL databases.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="mb-10">
+      <h2 class="section-title text-blue-900">Projects</h2>
+      <ul class="project-list">
+        <li>
+          <strong>Project 1: E-commerce Platform</strong><br />
+          <p>Built a full-stack e-commerce platform using Laravel, Vue.js, and MySQL. Integrated payment gateways and handled product inventory management.</p>
+        </li>
+        <li>
+          <strong>Project 2: SaaS Dashboard</strong><br />
+          <p>Developed a SaaS-based dashboard using React.js, TailwindCSS, and AWS for cloud infrastructure management.</p>
+        </li>
+        <li>
+          <strong>Project 3: Blogging Platform</strong><br />
+          <p>Created a blogging platform using Laravel and React.js. Implemented SEO features and user authentication systems.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section class="mb-10">
+      <h2 class="section-title text-blue-900">Education</h2>
+      <div>
+        <h3 class="font-bold">Bachelor of Science in Computer Science</h3>
+        <p class="text-sm text-gray-600">University of California, 2013 - 2017</p>
+        <p>Specialized in full-stack web development, database management, and cloud computing.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+      <h2 class="section-title text-blue-900">Contact</h2>
+      <p>If you're interested in collaborating or hiring, feel free to reach out!</p>
+      <form class="mt-5">
+        <input type="email" placeholder="Your Email" class="border px-4 py-2 rounded mb-3 block w-full lg:w-1/2" />
+        <textarea placeholder="Your Message" class="border px-4 py-2 rounded mb-3 block w-full lg:w-1/2"></textarea>
+        <button class="bg-blue-900 text-white px-6 py-2 rounded">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    <p>&copy; 2024 John Doe | Full-Stack Developer</p>
+  </footer>
 </body>
+
 </html>
